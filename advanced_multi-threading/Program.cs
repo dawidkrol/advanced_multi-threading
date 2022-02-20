@@ -1,4 +1,5 @@
 ﻿using advanced_multi_threading;
+using advanced_multi_threading.PLINQ;
 using Semaphore = advanced_multi_threading.Semaphore;
 
 //new Thread(() => ThreadUnsafe.Operation()).Start();
@@ -26,3 +27,7 @@ using Semaphore = advanced_multi_threading.Semaphore;
 //new Thread(() => BarrierClass.CounterWithBearer()).Start();
 //new Thread(() => BarrierClass.CounterWithBearer()).Start();
 
+var plinq = new PLINQTraining(9999999);
+
+plinq.CheckingWordParallel();
+plinq.CheckingWord();
